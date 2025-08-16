@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fiseleo's blog</title>
+    <link rel="stylesheet" href="/css/style.css">
+
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+
+<body>
+    <header class="navbar">
+        <div class="nav-left">
+            <a href="#" class="brand">Fiseleo's blog</a>
+        </div>
+        <div class="nav-right">
+            <a href="/index.html">Home</a>
+            <a href="/Blue Archive/index.html">Blue Archive</a>
+            <a href="/Master class/index.html">碩士班</a>
+        </div>
+    </header>
+
+    <div class="content-container">
+        <h2>使用書籍：Fundamentals of Aerodynamics, Seventh Edition</h2>
+        <h3>作者：John D. Anderson, Jr. & Christopher P. Cadou</h3>
+
+        <hr>
+
+        <h1>第一章 : Fundamental Principles</h1>
+        <p>
+            在第一章中，我們將介紹一些適用於空氣動力學的基本原理。這些原理是所有空氣動力學的基礎。
+        </p>
+
+        <h2>什麼是空氣動力學？</h2>
+
+        <blockquote>
+            <p>The term “aerodynamics” is generally used for problems arising from flight and other topics involving the
+                flow of air.</p>
+            <footer>— Ludwig Prandtl, 1949</footer>
+        </blockquote>
+
+        <blockquote>
+            <p>Aerodynamics: The dynamics of gases, especially atmospheric interactions with moving objects.</p>
+            <footer>— The American Heritage Dictionary of the English Language, 1969</footer>
+        </blockquote>
+        <h2>翻譯</h2>
+        <blockquote>
+            <p>「空氣動力學」一詞通常用於描述因飛行所產生的問題，以及其他涉及空氣流動的相關主題。</p>
+            <footer>— 路德維希·普朗托，1949年</footer>
+        </blockquote>
+
+        <blockquote>
+            <p>空氣動力學：研究氣體動力學的一門學科，特別指大氣與移動物體之間的相互作用。</p>
+            <footer>— 《美國傳統英語詞典》，1969年</footer>
+        </blockquote>
+        <h2>空氣動力學的應用</h2>
+        <p>
+            空氣動力學在許多領域都有廣泛的應用，包括航空航天工程、汽車設計、建築物設計等。它幫助我們理解如何減少阻力、提高效率，並確保飛行器和其他移動物體的穩定性和安全性。
+        </p>
+        <h2>定義</h2>
+        <p>
+            固體 : 固體是指具有固定形狀和體積的物質。它們的分子排列緊密，並且在常溫下不會改變形狀。
+        </p>
+        <p>
+            流體 : 流體是指可以流動的物質，包括液體和氣體。流體的分子排列較為鬆散，並且可以隨著外力的作用而改變形狀。
+        </p>
+        <p>
+            氣體 : 氣體是指在常溫下具有無固定形狀和體積的流體。氣體的分子之間距離較大（對於標準條件下的空氣，分子之間的間距平均約為分子直徑的10倍），並且可以自由移動。
+        </p>
+        <p>
+            因此，分子間力的影響要弱得多，分子的運動在整個氣體中相當自由。氣體和液體中分子的運動導致了相似的物理特性，即流體的特性——與固體截然不同。
+        </p>
+        <p>
+            液體流動和氣體流動之間存在某些差異；此外，不同種類的氣體（例如，氮氣、氦氣等）具有不同的性質。因此，流體動力學細分為以下三個領域：
+        </p>
+        <p>
+            流體力學－液體流動
+        </p>
+        <p>
+            氣體動力學－氣體流動
+        </p>
+        <p>
+            空氣動力學－空氣流動
+        </p>
+        <p>
+            這些領域絕非互相排斥；它們之間存在著許多相似之處和相同的現象。
+        </p>
+        <p>
+            作者(John D. Anderson, Jr.)傾向於對「空氣動力學」一詞進行非常廣泛的解釋，本書中對「空氣動力學」一詞的討論也並非僅限於空氣。
+        </p>
+        <h2>一些基本空氣動力學變量</h2>
+        <p>
+            在空氣動力學中，有一些基本的變量是非常重要的。這些變量包括：
+        </p>
+        <ul>
+            <li>密度（Density）</li>
+            <li>壓力（Pressure）</li>
+            <li>溫度（Temperature）</li>
+            <li>速度（Velocity）</li>
+        </ul>
+        <h2>壓力的定義</h2>
+        <p>
+            試想一個浸沒在流體中的表面。這個表面可以是一個真實的固體表面，例如牆面或物體表面；也可以是我們在流體中間想像畫出的一個自由表面。同時，請記住流體分子是不斷運動的
+        </p>
+        <p>
+            壓力 (Pressure) 是指氣體分子撞擊表面時，因動量的時變率而在表面上施加的單位面積正向力。
+        </p>
+        <p>
+            事實上，壓力通常是定義在流體中的一個點 (point) 或固體表面上的一個點，並且可以從一個點到另一個點發生變化。為了更清楚地看到這一點，請在體積 B 中考慮一個點 B。設：
+        </p>
+        <ul>
+            <li>dA =  在 B 點的微小面積</li>
+            <li>dF =  因壓力作用在 dA 一側的力</li>
+        </ul>
+        <p>
+            那麼，在 B 點的壓力定義為：
+        </p>
+        <p>
+            $$
+            P = \frac{dF}{dA}
+            $$
+        </p>
+        <p>
+            或是
+        </p>
+        <p>
+            $$
+            P = \lim_{dA \to 0} \frac{dF}{dA}
+            $$
+        </p>
+        <p>
+            壓力 p 是單位面積力的極限形式，其中關注的面積在 B 點縮至近乎為零。顯然，您可以看到壓力是一個點屬性，並且在流體中可以從一個點到另一個點有不同的值。
+        </p>
+        <p>
+            嚴格來說，dA 不能為零，因為在那種情況下 B 點將沒有分子。上述極限應被理解為 dA 趨近於一個非常小的值，在我們的宏觀思維中接近於零，但仍比分子在微觀基礎上的平均間距大得多。
+        </p>
+        <h2>密度的定義</h2>
+        <p>
+            定義為每單位體積的質量
+        </p>
+        <P>
+            它是一個點屬性，可以在流體中從一點到另一點變化。設一個點 B 在流體中。令：
+        </P>
+        <ul>
+            <li>dV = 在 B 點的微小體積</li>
+            <li>dM = 在 dV 中的質量</li>
+        </ul>
+        <p>
+            那麼，在 B 點的密度定義為：
+        </p>
+        <p>
+            $$
+            \rho = \frac{dM}{dV}
+            $$
+        </p>
+        <p>
+            或是
+        </p>
+        <p>
+            $$
+            \rho = \lim_{dV \to 0} \frac{dM}{dV}
+            $$
+        </p>
+        <P>
+            和dA 一樣，dV 不能為零。
+        </P>
+        <h2>溫度的定義</h2>
+        <p>
+            溫度在高速空氣動力學中扮演著重要角色（在第7章介紹）。氣體的溫度 T 與氣體分子的平均動能成正比。
+        </p>
+        <P>
+            如果 KE 是平均分子動能，那麼溫度由以下公式定義：
+        </P>
+        <P>
+            $$
+            T = \frac{2}{3k} \cdot KE
+            $$
+        </P>
+        <p>
+            其中 k 是波茲曼常數。這個公式表明，溫度與分子運動的平均能量有關。
+        </p>
+        <P>
+            而在低溫氣體中，分子的隨機運動相對較慢。溫度也是一個點屬性，可以在氣體中從一點到另一點變化。
+        </P>
+        <p>
+            空氣動力學的主要關注點是運動中的流體。流速 (flow velocity) 是一個極其重要的考量因素。
+        </p>
+        <p>
+           流體速度的概念比固體速度的概念要微妙一些。考慮一個以 30 m/s 進行平移運動的固體。那麼固體的所有部分都同時以 30 m/s 的速度平移。相比之下，流體是一種「黏糊糊的」物質，對於運動中的流體，流體的一部分可能以不同於另一部分的速度運動。 
+        </p>
+        <p>
+            如圖 (Fig1) 所示
+        </p>
+        <p>
+            <img src="/Master class/Aerodynamics/images/ch1/fig1.png" alt="Fig1: Flow Velocity">
+        </p>
+        <p>
+            圖1: 流速和流線
+        </p>
+        <p>
+            一個流體元素，並觀察這個元素隨時間的移動。這個流體元素的速度和方向會隨著它從一點移動到另一點而變化。
+        </p>
+        <p>
+            固定在空間中的一個特定不動點，比如圖 1 中的點 B。
+        </p>
+        <p>
+            流速定義如下：在空間中的點 B 的流速，是在該點的無窮小流體元素掃過它時的速度。
+        </p>
+        <p>
+            流速 <b>V</b> 同時具有大小和方向；因此，它是一個向量。
+        </p>
+        <p>
+            速度的純量大小 <i>V</i>  經常用到，並以 <i>V</i>  表示。
+        </p>
+
+        <h2>摩擦力</h2>
+        <p>
+            如圖 (Fig2) 所示
+        </p>
+        <p>
+            <img src="/Master class/Aerodynamics/images/ch1/fig2.png" alt="Fig2: Friction">
+        </p>
+        <p>
+            圖2: 由於流動中的速度梯度而產生的摩擦力。
+        </p>
+        <p>
+            近乎零的點 1。剪應力沿著流線切向作用。對於空氣動力學應用中感興趣的氣體和液體，某一點上的剪應力值與該點處垂直於流線的速度變化的空間率成正比。
+        </p>
+        <p>
+            （即，對於圖 2 所示的流動，τ ∝ d<i>V</i>/dy）。比例常數被定義為黏度係數，μ。
+        </p>
+        <p>
+            因此，剪應力 τ 定義為：
+        </p>
+        <p>
+            $$
+            \tau = \mu \cdot \frac{dV}{dy}
+            $$
+        </p>
+        <p>
+            其中 d<i>V</i>/dy 是速度梯度。
+        </p>
+        <p>
+            在現實中，μ 並不是一個真正的常數；它是流體溫度的函數。
+        </p>
+        <p>
+            從上述方程式可知，我們推斷在速度梯度小的流場區域，τ 很小，摩擦對流動的影響也小。另一方面，在速度梯度大的區域，τ 很大，局部摩擦的影響可能相當大。
+        </p>
+
+    </div>
+</body>
+
+</html>
