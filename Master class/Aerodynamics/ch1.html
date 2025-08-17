@@ -264,8 +264,149 @@
         <p>
             壓力 p 和剪應力 τ 都有單位面積力的因次（磅/平方英尺 或 牛頓/平方公尺）。
         </p>
-
-
+        <p>
+            如圖 3 所示
+        </p>
+        <p>
+            <img src="/Master class/Aerodynamics/images/ch1/fig3.png" alt="Fig3: Aerodynamic Forces and Moments">
+        </p>
+        <p>
+            圖3: 氣動表面壓力和剪應力。
+            
+        </p>
+        <ul>
+            <li>p = p(s) = 表面壓力分佈 (surface pressure distribution)</li>
+            <li>τ = τ(s) = 表面剪應力分佈 (surface shear stress distribution)</li>
+        </ul>
+        <p>
+            壓力 p 作用於表面法線方向，而剪應力 τ 作用於表面切線方向。
+        </p>
+        <p>
+            壓力是由於撞擊表面的「推擠作用」所致，而剪應力則是由於物體與空氣之間的摩擦力所引起的「拖曳作用」（將在第15至20章詳細研究）。
+        </p>
+        <p>
+            壓力 p 和剪應力 τ 的分佈在整個物體表面上積分後的淨效應，就是一個合空氣動力 R 和力矩 M，如圖 4 所示。這個合力 R 又可以被分解為兩組分力。
+        </p>
+        <p>
+            <img src="/Master class/Aerodynamics/images/ch1/fig4.png" alt="Fig4: Aerodynamic Forces and Moments">
+        </p>
+        <p>
+            圖4: 作用於機體內的合力和力矩。
+        </p>
+        <p>
+            力與力矩的分量
+        </p>
+        <p>
+            如圖 5 所示
+        </p>
+        <p>
+            <img src="/Master class/Aerodynamics/images/ch1/fig5.png" alt="Fig5: Aerodynamic Forces and Moments">
+        </p>
+        <p>
+            圖5 : 合成氣動力及其分解成的分量。
+        </p>
+        <p>
+            V∞ 是相對風速，定義為遠離物體前方時的流速，因此 V∞ 也被稱為自由流速度 (freestream velocity)
+        </p>
+        <P>
+            根據定義
+        </P>
+        <p>
+            L ≡ 升力 (lift) ≡ R 垂直於 V∞ 的分量
+        </p>
+        <p>
+            D ≡ 阻力 (drag) ≡ R 平行於 V∞ 的分量
+        </p>
+        <p>
+            弦長 c 是從物體前緣到後緣的直線距離。有時，R 會被分解為垂直於和平行於弦長的分量，如圖 5 所示。根據定義：
+        </p>
+        <p>
+            N ≡ 法向力 (normal force) ≡ R 垂直於 c 的分量
+        </p>
+        <p>
+            N ≡ 法向力 (normal force) ≡ R 垂直於 c 的分量
+        </p>
+        <p>
+            A ≡ 軸向力 (axial force) ≡ R 平行於 c 的分量
+        </p>
+        <p>
+            攻角 (angle of attack) α 定義為 c 與 V∞ 之間的夾角。因此，α 也是 L 與 N 之間以及 D 與 A 之間的夾角。從圖 5 中，這兩組分量之間的幾何關係是
+        </p>
+        <p>
+            $$
+            L = Ncos \alpha - A sin \alpha \quad (1)
+            $$
+        </p>
+        <p>
+            $$
+            D = N sin \alpha + A cos \alpha \quad (2)
+            $$
+        </p>
+        <p>
+            壓力與剪應力分佈的積分
+        </p>
+        <p>
+            研究壓力與剪應力分佈的積分，以獲得空氣動力與力矩。
+        </p>
+        <p>
+            圖 6 中顯示了二維物體。弦線被水平繪製，因此相對風向與水平線成攻角 α 傾斜。一個 xy 坐標系被設置為與弦線平行和垂直。從前緣沿著物體表面測量的距離在上表面表示為 su，在下表面表示為 sl。上表面的壓力和剪應力表示為 pu 和 τu，它們都是 su 的函數。同樣，pl 和 τl 是下表面的相應物理量，是 sl 的函數。在給定點，壓力垂直於表面，剪應力則與表面相切。在圖 6 中，相對於垂直於 p 的方向和水平線，θ 的正方向是順時針測量。
+        </p>
+        <p>
+            <img src="/Master class/Aerodynamics/images/ch1/fig6.png" alt="Fig6: Pressure and Shear Stress Distribution">
+        </p>
+        <p>
+            圖6: 二維體表壓力與剪應力分佈積分的命名法。
+        </p>
+        <p>
+            單位翼展的法向力與軸向力
+        </p>
+        <p>
+            <img src="/Master class/Aerodynamics/images/ch1/fig7.png" alt="Fig7: Normal and Axial Forces per Unit Span">
+        </p>
+        <p>
+            圖7: 作用於身體表面某一元素的空氣動力。。
+        </p>
+        <p>
+            考慮圖 7 中所示的均勻截面無限長圓柱體的一個單位翼展長度截面。
+        </p>
+        <p>
+            考慮一個微元面積 dS，其中 dS = (ds)(l)，如圖 7 的陰影區域所示。
+        </p>
+        <p>
+            我們感興趣的是壓力與剪應力作用在微元面積 dS 上，對總法向力 N' 和總軸向力 A' 的貢獻。
+        </p>
+        <p>
+            N' 和 A' 的撇號表示單位翼展的力。
+        </p>
+        <p>
+            作用於上表面微元面積 dS 上的微元法向力與軸向力為：
+        </p>
+        <p>
+            $$
+            dN'_u = -p_u \cdot ds_u \cdot cos \theta  - \tau_u \cdot ds_u \cdot sin \theta \quad (3)
+            $$
+        </p>
+        <p>
+            $$
+            dA'_u = -p_u \cdot ds_u \cdot sin \theta + \tau_u \cdot ds_u \cdot cos \theta \quad (4)
+            $$
+        </p>
+        <p>
+            在下表面，我們有：
+        </p>
+        <p>
+            $$
+            dN'_l = p_l \cdot ds_l \cdot cos \theta  - \tau_l \cdot ds_l \cdot sin \theta \quad (5)
+            $$
+        </p>
+        <p>
+            $$
+            dA'_l = p_l \cdot ds_l \cdot sin \theta + \tau_l \cdot ds_l \cdot cos \theta \quad (6)
+            $$
+        </p>
+        <p>
+            在方程式 (1) 到 (6) 中，N' 和 A' 的正方向如圖 5 所示。對於 θ，必須遵循圖 6 中所示的正順時針約定。
+        </P>
     </div>
 </body>
 
