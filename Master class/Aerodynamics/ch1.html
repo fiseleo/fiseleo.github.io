@@ -293,9 +293,9 @@
         <p>
             圖4: 作用於機體內的合力和力矩。
         </p>
-        <p>
+        <h2>
             力與力矩的分量
-        </p>
+        </h2>
         <p>
             如圖 5 所示
         </p>
@@ -342,9 +342,9 @@
             D = N sin \alpha + A cos \alpha \quad (2)
             $$
         </p>
-        <p>
+        <h2>
             壓力與剪應力分佈的積分
-        </p>
+        </h2>
         <p>
             研究壓力與剪應力分佈的積分，以獲得空氣動力與力矩。
         </p>
@@ -357,9 +357,9 @@
         <p>
             圖6: 二維體表壓力與剪應力分佈積分的命名法。
         </p>
-        <p>
+        <h2>
             單位翼展的法向力與軸向力
-        </p>
+        </h2>
         <p>
             <img src="/Master class/Aerodynamics/images/ch1/fig7.png" alt="Fig7: Normal and Axial Forces per Unit Span">
         </p>
@@ -406,7 +406,167 @@
         </p>
         <p>
             在方程式 (1) 到 (6) 中，N' 和 A' 的正方向如圖 5 所示。對於 θ，必須遵循圖 6 中所示的正順時針約定。
-        </P>
+        </p>
+        <p>
+            通過將方程式 (3) 到 (6) 從前緣 (LE) 積分到後緣 (TE)，可以獲得單位翼展上的總法向力與軸向力：
+        </p>
+        <p>
+            $$
+            N' = -\int_{LE}^{TE} (p_ucos \theta + \tau_usin \theta) ds_u + \int_{LE}^{TE} (p_lcos \theta - \tau_lsin \theta) ds_l \quad (7)
+            $$
+        </p>
+        <p>
+            $$
+            A' = \int_{LE}^{TE} (-p_usin \theta + \tau_u cos \theta) ds_u + \int_{LE}^{TE} (p_lsin \theta + \tau_l cos \theta) ds_l \quad (8)
+            $$
+        </p>
+
+        <h2>
+            單位翼展的空氣動力力矩
+        </h2>
+        <p>
+            作用於物體上的空氣動力力矩取決於力矩的計算點。通常，力矩是繞前緣計算的。按照慣例，傾向於增加 α（上仰）的力矩是正的，而傾向於減小 α（下俯）的力矩是負的。
+        </p>
+        <p>
+            如圖 8 所示
+        </p>
+        <p>
+            <img src="/Master class/Aerodynamics/images/ch1/fig8.png" alt="Fig8: Aerodynamic Moment per Unit Span">
+        </p>
+        <p>
+            圖8: 空氣動力矩的符號慣例。
+        </p>
+        <p>
+            回到圖 6 和 7，由於上表面微元區域 dS 上的 p 和 τ 產生的繞前緣的單位翼展力矩為：
+        </p>
+        <p>
+           $$
+            dM'_u = (p_u cos \theta + \tau_u sin \theta)x ds_u + (-p_u sin \theta + \tau_u cos \theta)y ds_u \quad (9)
+           $$ 
+        </p>
+        <p>
+            在下表面：
+        </p>
+        <p>
+            $$
+            dM'_l = (-p_l cos \theta + \tau_l sin \theta)x ds_l + (p_l sin \theta + \tau_l cos \theta)y ds_l \quad (10)
+            $$
+        </p>
+        <p>
+            將方程式 (9) 和 (10) 從前緣積分到後緣，可以得到繞前緣的單位翼展力矩：
+        </p>
+        <p>
+            $$
+            M'_LE = \int_{LE}^{TE}[(p_u cos \theta + \tau_u sin \theta)x - (p_u sin \theta - \tau_u cos \theta)y]ds_u + \int_{LE}^{TE} [(-p_l cos \theta + \tau_l sin \theta)x + (p_l sin \theta + \tau_l cos \theta)y]ds_l \quad (11)
+            $$
+        </p>
+        <p>
+            在方程式 (9), (10) 和 (11) 中 ，p、τ、x 和 y 都是給定物體形狀的 s 的已知函數。因此，原則上，這些積分可以被計算。
+        </p>
+        <h2>
+            無因次係數
+        </h2>
+        <p>
+            有一些量比空氣動力與力矩本身更為基本。這些是無因次的力與力矩係數，定義如下。令 ρ∞ 和 V∞ 分別為遠離物體前方的自由流中的密度和速度。我們定義一個有因次的量，稱為動壓 (Dynamic pressure)，為 q ∞：
+        </p>
+        <p>
+            $$
+            q_\infty = \frac{1}{2} \rho_\infty V_\infty^2
+            $$
+        </p>
+        <p>
+            動壓具有壓力的單位（即，磅/平方英尺 或 牛頓/平方公尺）。令 S 為參考面積，L 為參考長度。無因次的力與力矩係數定義如下：
+        </p>
+        <ul>
+            <li>升力係數 (Lift coefficient): $$C_L = \frac{L}{q_\infty S}$$</li>
+            <li>阻力係數 (Drag coefficient): $$C_D = \frac{D}{q_\infty S}$$</li>
+            <li>法向力係數 (Normal force coefficient): $$C_N = \frac{N}{q_\infty S}$$</li>
+            <li>軸向力係數 (Axial force coefficient): $$C_A = \frac{A}{q_\infty S}$$</li>
+            <li>力矩係數 (Moment coefficient): $$C_M = \frac{M}{q_\infty S L}$$</li>
+        </ul>
+        <p>
+            在上述係數中，參考面積 S 和參考長度 L 的選擇是為了與給定的幾何形狀相關。對於不同的形狀，S 和 L 可能代表不同的東西。
+        </p>
+        <p>
+            例如，對於飛機機翼，S 是機翼平面面積，L 是平均弦長。
+        </p>
+        <p>
+            對於圓柱體，S 是截面積，L 是圓柱的直徑。
+        </p>
+        <p>
+            <img src="/Master class/Aerodynamics/images/ch1/fig9.png" alt="Fig9: Some reference areas and lengths.">
+        </p>
+        <p>
+            圖9: 一些參考面積和長度。
+        </p>
+        <p>
+            參考面積和長度的具體選擇不是關鍵；然而，在使用力與力矩係數數據時，您必須始終知道這些特定數據是基於哪些量。
+        </p>
+        <h2>二維係數與壓力、摩擦係數</h2>
+        <p>
+            大寫字母符號（即 CL, CD, CM, 和 CA）表示完整三維物體（如飛機或有限翼展機翼）的力與力矩係數。相比之下，對於二維物體，習慣上用小寫字母表示氣動力係數；例如：
+        </p>
+        <ul>
+            <li>升力係數 (Lift coefficient): $$c_l = \frac{L'}{q_\infty c}$$</li>
+            <li>阻力係數 (Drag coefficient): $$c_d = \frac{D'}{q_\infty c}$$</li>
+            <li>力矩係數 (Moment coefficient): $$c_m = \frac{M'}{q_\infty c^2}$$</li>
+            <li>摩擦係數 (Friction coefficient): $$c_f = \frac{\tau}{q_\infty}$$</li>
+        </ul>
+        <p>
+            其中參考面積 S = c(1) = c
+        </p>
+        <p>
+            另外兩個立即會用到的無因次量是:
+        </p>
+        <ul>
+            <li>壓力係數 (Pressure coefficient): $$C_p = \frac{p - p_\infty}{q_\infty}$$</li>
+            <li>表面摩擦係數 (Skin friction coefficient): $$c_f = \frac{\tau}{q_\infty}$$ 其中 p∞ 是自由流壓力。</li>
+        </ul>
+        <h2>積分形式的係數</h2>
+        <p>
+            從圖 10 的幾何關係中，我們有：
+        </p>
+        <ul>
+            <li> $$dx = ds cos \theta \quad (12)$$</li>
+            <li> $$dy = -(ds sin \theta) \quad (13)$$</li>
+            <li> $$ S = c(1) = c \quad (14) $$</li>
+        </ul>
+        <p>
+            將方程式 (12) 和 (13) 代入方程式 (7), (8) 和 (11)；除以 q∞；再進一步除以 S（形式為方程式 (14)），我們得到力與力矩係數的以下積分形式：
+        </p>
+        <p>
+            $$
+            c_n = \frac{1}{c} [\int_{0}^{c}(C_p,_l - C_p,_u)dx + \int_{0}^{c}(c_f,_u \frac{dy_u}{dx} + c_f,_l \frac{dy_l}{dx})dx] \quad (15)
+            $$
+        </p>
+        <p>
+            $$
+            c_a = \frac{1}{c} [\int_{0}^{c}(C_p,_u \frac{dy_u}{dx} - C_p,_l \frac{dy_l}{dx})  dx + \int_{0}^{c}(c_f,_u + c_f,_l) dx] \quad (16)
+            $$
+        </p>
+        <p>
+            $$
+            c_m = \frac{1}{c^2} [\int_{0}^{c}(C_p,_u  - C_p,_l) xdx - \int_{0}^{c}(c_f,_u \frac {dy_u}{dx}  + c_f,_l \frac{dy_l}{dx})xdx + \int_{0}^{c}(C_p,_u \frac{dy_u}{dx}+c_f,_u)y_u dx + \int_{0}^{c}(-C_p,_l \frac{dy_l}{dx}+c_f,_l)y_1 dx] \quad (17)
+            $$
+        </p>
+        <p>
+            升力與阻力係數可以通過將方程式 (1) 和 (2) 轉換為係數形式獲得
+        </p>
+        <p>
+            $$
+            c_l = c_n cos \alpha - c_a sin \alpha \quad (18)
+            $$
+        </p>
+        <p>
+            $$
+            c_d = c_n sin \alpha + c_a cos \alpha \quad (19)
+            $$
+        </p>
+        <p>
+            從方程式 (15) 到 (19) 中需要注意的是，空氣動力與力矩係數可以通過對物體表面的壓力與表面摩擦係數進行積分來獲得。這在理論和實驗空氣動力學中都是一個常見的程序。此外，儘管我們的推導使用了二維物體，但對於三維物體也可以呈現類似的發展過程——只是幾何形狀和方程式變得更複雜，但原理是相同的。
+        </p>
+
+
     </div>
 </body>
 
